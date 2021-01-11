@@ -11,14 +11,18 @@ test('Adds 2 + 2 to NOT equal 5', () => {
     expect(functions.add(2, 2)).not.toBe(5)
 });
 
-// PARAMETERS TO CHECK FOR TRUTHY AND FALSEY VALUES
+// PARAMETERS TO CHECK FOR TRUTHY AND FALSY VALUES
 // toBeNull matches only null
 // toBeUndefined matches only undefined
 // toBeUndefined opposite of toBeUndefined
 // toBeTruthy matched anything that an if statement treats as true
-// toBeFalsey matched anything that an if statement treats as false
+// toBeFalsy matched anything that an if statement treats as false
 
 // Some examples below
 test('should be null', () => {
     expect(functions.isNull()).toBeNull()
+});
+
+test('should be falsy', () => {
+    expect(functions.checkValue(null)).toBeFalsy()
 });

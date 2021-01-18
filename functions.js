@@ -1,7 +1,7 @@
 // Import axios
 const  axios = require("axios");
 
-// Objects with functions to test
+// Functions to test
 const functions = {
   add: (num1, num2) => num1 + num2,
   isNull: () => null,
